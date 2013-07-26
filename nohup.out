@@ -1,7 +1,7 @@
 Error: That port is already in use.
 Unhandled exception in thread started by <bound method Command.inner_run of <django.contrib.staticfiles.management.commands.runserver.Command object at 0x2015a50>>
 Validating models...
-
+ 
 Traceback (most recent call last):
   File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 92, in inner_run
     self.validate(display_num_errors=True)
