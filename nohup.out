@@ -1,0 +1,45 @@
+Error: That port is already in use.
+Unhandled exception in thread started by <bound method Command.inner_run of <django.contrib.staticfiles.management.commands.runserver.Command object at 0x2015a50>>
+Validating models...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 92, in inner_run
+    self.validate(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 280, in validate
+    num_errors = get_validation_errors(s, app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/validation.py", line 28, in get_validation_errors
+    from django.db import models, connection
+  File "/usr/local/lib/python2.7/dist-packages/django/db/__init__.py", line 40, in <module>
+    backend = load_backend(connection.settings_dict['ENGINE'])
+  File "/usr/local/lib/python2.7/dist-packages/django/db/__init__.py", line 34, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 93, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 45, in load_backend
+    raise ImproperlyConfigured(error_msg)
+django.core.exceptions.ImproperlyConfigured: 'django.db.backends.django.db.backends.postgresql_psycopg2' isn't an available database backend.
+Try using 'django.db.backends.XXX', where XXX is one of:
+    u'mysql', u'oracle', u'postgresql_psycopg2', u'sqlite3'
+Error was: No module named django.db.backends.postgresql_psycopg2.base
+Unhandled exception in thread started by <bound method Command.inner_run of <django.contrib.staticfiles.management.commands.runserver.Command object at 0x1396a50>>
+Validating models...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 92, in inner_run
+    self.validate(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 280, in validate
+    num_errors = get_validation_errors(s, app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/validation.py", line 28, in get_validation_errors
+    from django.db import models, connection
+  File "/usr/local/lib/python2.7/dist-packages/django/db/__init__.py", line 40, in <module>
+    backend = load_backend(connection.settings_dict['ENGINE'])
+  File "/usr/local/lib/python2.7/dist-packages/django/db/__init__.py", line 34, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 93, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 45, in load_backend
+    raise ImproperlyConfigured(error_msg)
+django.core.exceptions.ImproperlyConfigured: 'django.db.backends.django.db.backends.postgresql_psycopg2' isn't an available database backend.
+Try using 'django.db.backends.XXX', where XXX is one of:
+    u'mysql', u'oracle', u'postgresql_psycopg2', u'sqlite3'
+Error was: No module named django.db.backends.postgresql_psycopg2.base
